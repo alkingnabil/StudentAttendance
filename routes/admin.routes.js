@@ -4,18 +4,8 @@ const { authenticate, authorize } = require("../middleware/auth");
 const Student = require("../models/Student");
 const Attendance = require("../models/Attendance");
 const Evaluation = require("../models/Evaluation");
-const Config = require("../models/Config");
-<<<<<<< HEAD
-const Month = require("../models/Month");
-=======
-const express = require("express");
-const { authenticate, authorize } = require("../middleware/auth");
-const Student = require("../models/Student");
-const Attendance = require("../models/Attendance");
-const Evaluation = require("../models/Evaluation");
 const Month = require("../models/Month");
 const Config = require("../models/Config");
->>>>>>> 700bdf85ab079cde9ca5797b87175d176ac49724
 
 // تسجيل الحضور بالكود أو QR
 router.post("/attendance", authenticate, authorize(["admin", "master"]), async (req, res) => {
