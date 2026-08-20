@@ -1,3 +1,4 @@
+const mongoose = require("mongoose");
 const configSchema = new mongoose.Schema({
   locations: [String],
   facultyMembers: [String],
